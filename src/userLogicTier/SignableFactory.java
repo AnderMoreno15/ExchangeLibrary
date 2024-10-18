@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userLogicTier.model;
+package userLogicTier;
 
 /**
  *
  * @author inifr
  */
-public class Client {
+public class SignableFactory {
+    
     
 }
