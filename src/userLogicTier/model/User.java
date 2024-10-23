@@ -10,7 +10,8 @@ package userLogicTier.model;
  * @author inifr
  * @author ander
  */
-public class User{
+public class User {
+
     private String name;
     private String email;
     private String password;
@@ -46,4 +47,33 @@ public class User{
         this.email = emailInput;
         this.password = passwordInput;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
 }
