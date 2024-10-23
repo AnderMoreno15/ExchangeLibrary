@@ -8,8 +8,10 @@ package userLogicTier.model;
 /**
  *
  * @author inifr
+ * @author ander
  */
-public class User{
+public class User {
+
     private String name;
     private String email;
     private String password;
@@ -17,8 +19,6 @@ public class User{
     private String city;
     private String zip;
     private boolean active;
-    private int company_id;
-    private String notification_type;
 
     //Constructor for testing purposes
     public User() {
@@ -29,12 +29,10 @@ public class User{
         this.city = "";
         this.zip = "";
         this.active = false;
-        this.company_id = 1;
-        this.notification_type = "email";
     }
 
     //Constructor for SignUp
-    public User(String nameInput, String emailInput, String passwordInput, String streetInput, String cityInput, String zipInput, boolean activeInput, int company_idInput, String notification_typeInput) {
+    public User(String nameInput, String emailInput, String passwordInput, String streetInput, String cityInput, String zipInput, boolean activeInput) {
         this.name = nameInput;
         this.email = emailInput;
         this.password = passwordInput;
@@ -42,8 +40,6 @@ public class User{
         this.city = cityInput;
         this.zip = zipInput;
         this.active = activeInput;
-        this.company_id = company_idInput;
-        this.notification_type = notification_typeInput;
     }
 
     //Constructor for SignIn
@@ -51,4 +47,33 @@ public class User{
         this.email = emailInput;
         this.password = passwordInput;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
 }

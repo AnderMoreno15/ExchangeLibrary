@@ -9,9 +9,10 @@ import userLogicTier.model.User;
 /**
  *
  * @author inifr
+ * @author ander
  */
 public interface Signable {
     
-    public User signUp(String loginInput, String passwordInput, boolean activeInput, String cityInput, String streetInput, int zipCodeInput);
-    public User SignIn(String loginInput, String passwordInput, boolean activeInput);
+    public void signUp(User user);
+    public User signIn(User user);
 }
