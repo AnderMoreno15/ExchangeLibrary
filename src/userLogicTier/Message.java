@@ -25,18 +25,15 @@ public class Message implements Serializable{
         return User;
     }
 
-    public MessageType getMessageType() {
-        return MessageType;
-    }
-
     public void setUser(User User) {
         this.User = User;
     }
-
+    
+    public MessageType getMessageType() {
+        return MessageType;
+    }
+    
     public void setMessageType(MessageType MessageType) {
         this.MessageType = MessageType;
     }
-   
-   
-   
 }
