@@ -5,6 +5,7 @@
  */
 package userLogicTier;
 
+import java.sql.SQLException;
 import userLogicTier.model.User;
 /**
  *
@@ -12,7 +13,7 @@ import userLogicTier.model.User;
  * @author ander
  */
 public interface Signable {
-    
-    public void signUp(User user);
-    public User signIn(User user);
+
+    public User signUp(User user) throws SQLException;
+    public User signIn(User user) throws SQLException;
 }
