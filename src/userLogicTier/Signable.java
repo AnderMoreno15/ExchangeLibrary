@@ -5,6 +5,11 @@
  */
 package userLogicTier;
 
+import exceptions.ExistingUserException;
+import exceptions.InactiveUserException;
+import exceptions.ServerException;
+import exceptions.UserCapException;
+import exceptions.UserCredentialException;
 import java.sql.SQLException;
 import userLogicTier.model.User;
 /**
@@ -14,6 +19,6 @@ import userLogicTier.model.User;
  */
 public interface Signable {
 
-    public User signUp(User user) throws SQLException;
-    public User signIn(User user) throws SQLException;
+    public User signUp(User user) throws SQLException, ExistingUserException, ServerException, UserCapException;
+    public User signIn(User user) throws SQLException, UserCredentialException, ServerException;
 }
