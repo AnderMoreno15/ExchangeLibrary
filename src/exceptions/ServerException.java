@@ -3,15 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userLogicTier.exceptions;
+package exceptions;
 
 /**
  *
- * @author inifr
+ * @author Aitziber
  */
-public class UserCapReachedException extends Exception {
+public class ServerException extends Exception{
     
-    public UserCapReachedException(String msg){
+    public ServerException(){
+    }
+    public ServerException(String msg){
         super(msg);
     }
 }
