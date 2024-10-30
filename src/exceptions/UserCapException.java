@@ -3,15 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userLogicTier.exceptions;
+package exceptions;
 
 /**
  *
- * @author inifr
+ * @author Aitziber
  */
-public class UserAlreadyExistsException extends Exception {
+public class UserCapException extends Exception{
     
-    public UserAlreadyExistsException(String msg){
+    public UserCapException(){
+    }
+    public UserCapException(String msg){
         super(msg);
     }
 }

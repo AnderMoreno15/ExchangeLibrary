@@ -3,15 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userLogicTier.exceptions;
+package exceptions;
 
 /**
  *
- * @author inifr
+ * @author Aitziber
  */
-public class UserNotFoundException extends Exception {
+public class ExistingUserException extends Exception{
     
-    public UserNotFoundException(String msg){
+    public ExistingUserException(){
+    }
+    public ExistingUserException(String msg){
         super(msg);
     }
 }
