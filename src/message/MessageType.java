@@ -8,6 +8,7 @@ package message;
 /**
  *
  * @author Pebble
+ * @author Aitziber
  */
 public enum MessageType {
     SERVER_SIGN_IN_REQUEST,
@@ -18,5 +19,5 @@ public enum MessageType {
     SERVER_USER_ALREADY_EXISTS,
     SERVER_USER_NOT_FOUND,
     SERVER_CONNECTION_ERROR,
-    SERVER_CREDENTIAL_ERROR
+    SERVER_USER_INACTIVE
 }
