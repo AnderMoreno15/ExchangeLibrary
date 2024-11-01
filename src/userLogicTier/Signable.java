@@ -10,15 +10,16 @@ import exceptions.InactiveUserException;
 import exceptions.ServerException;
 import exceptions.UserCapException;
 import exceptions.UserCredentialException;
-import java.sql.SQLException;
 import userLogicTier.model.User;
 /**
  *
  * @author inifr
  * @author ander
+ * @author Aitziber
  */
 public interface Signable {
 
-    public User signUp(User user) throws SQLException, ExistingUserException, ServerException, UserCapException;
-    public User signIn(User user) throws SQLException, UserCredentialException, ServerException;
+    public User signUp (User user) throws ExistingUserException, ServerException;
+    public User signIn (User user) throws InactiveUserException, UserCredentialException, UserCapException, ServerException;
+
 }
