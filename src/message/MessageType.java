@@ -7,7 +7,7 @@ package message;
 
 /**
  *
- * @author Usuario
+ * @author Pebble
  */
 public enum MessageType {
     SERVER_SIGN_IN_REQUEST,
