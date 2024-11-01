@@ -76,4 +76,34 @@ public class User {
         return active;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setZip(String zip) {
+        this.zip = zip;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+    
+    
+
 }
