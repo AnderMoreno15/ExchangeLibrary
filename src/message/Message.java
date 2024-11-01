@@ -10,7 +10,7 @@ import userLogicTier.model.User;
 
 /**
  *
- * @author Usuario
+ * @author Pebble
  */
 public class Message implements Serializable{
    private User User;
