@@ -10,6 +10,7 @@ import exceptions.InactiveUserException;
 import exceptions.ServerException;
 import exceptions.UserCapException;
 import exceptions.UserCredentialException;
+import java.sql.SQLException;
 import userLogicTier.model.User;
 /**
  *
@@ -19,7 +20,7 @@ import userLogicTier.model.User;
  */
 public interface Signable {
 
-    public User signUp (User user) throws ExistingUserException, ServerException;
-    public User signIn (User user) throws InactiveUserException, UserCredentialException, UserCapException, ServerException;
+    public User signUp (User user) throws SQLException, ExistingUserException, ServerException;
+    public User signIn (User user) throws SQLException, InactiveUserException, UserCredentialException, UserCapException, ServerException;
 
 }
