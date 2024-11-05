@@ -5,12 +5,14 @@
  */
 package userLogicTier.model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author inifr
  * @author ander
  */
-public class User {
+public class User implements Serializable {
 
     private String name;
     private String email;
