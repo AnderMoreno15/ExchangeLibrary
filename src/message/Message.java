@@ -12,7 +12,8 @@ import userLogicTier.model.User;
  *
  * @author Pebble
  */
-public class Message implements Serializable{
+public class Message implements Serializable {
+   private static final long serialVersionUID = 1L;
    private User User;
    private MessageType MessageType;
 
