@@ -6,14 +6,32 @@
 package exceptions;
 
 /**
- *
+ * Exception thrown to indicate that the user capacity limit has been reached.
+ * This exception is used when a server or application cannot accept more users due to capacity restrictions.
+ * 
+ * Usage Example:
+ * if (userLimitReached) {
+ *     throw new UserCapException("User capacity limit has been reached");
+ * }
+ * 
+ * @see Exception
+ * 
  * @author Aitziber
  */
-public class UserCapException extends Exception{
-    
-    public UserCapException(){
+public class UserCapException extends Exception {
+
+    /**
+     * Constructs a new UserCapException with null as its detail message.
+     */
+    public UserCapException() {
     }
-    public UserCapException(String msg){
+
+    /**
+     * Constructs a new UserCapException with the specified detail message.
+     *
+     * @param msg the detail message
+     */
+    public UserCapException(String msg) {
         super(msg);
     }
 }

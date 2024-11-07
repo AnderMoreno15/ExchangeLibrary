@@ -6,8 +6,15 @@
 package message;
 
 /**
- *
- * @author Pebble
+ * Enum representing the types of messages exchanged between the client and server.
+ * Each constant in this enum defines a specific request or response type for server communication.
+ * 
+ * Usage Example:
+ * MessageType messageType = MessageType.SERVER_SIGN_IN_REQUEST;
+ * 
+ * @see Message
+ * 
+ * @author Pablo
  * @author Aitziber
  */
 public enum MessageType {

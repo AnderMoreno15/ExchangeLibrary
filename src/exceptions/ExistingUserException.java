@@ -6,14 +6,32 @@
 package exceptions;
 
 /**
- *
+ * Exception thrown to indicate that a user attempting to register already exists in the system.
+ * This exception is typically thrown during the registration process to prevent duplicate user entries.
+ * 
+ * Usage Example:
+ * if (userAlreadyExists) {
+ *     throw new ExistingUserException("User already exists");
+ * }
+ * 
+ * @see Exception
+ * 
  * @author Aitziber
  */
-public class ExistingUserException extends Exception{
-    
-    public ExistingUserException(){
+public class ExistingUserException extends Exception {
+
+    /**
+     * Constructs a new ExistingUserException with null as its detail message.
+     */
+    public ExistingUserException() {
     }
-    public ExistingUserException(String msg){
+
+    /**
+     * Constructs a new ExistingUserException with the specified detail message.
+     *
+     * @param msg the detail message
+     */
+    public ExistingUserException(String msg) {
         super(msg);
     }
 }
