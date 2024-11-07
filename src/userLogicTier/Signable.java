@@ -28,7 +28,7 @@ import userLogicTier.model.User;
  * @see UserCredentialException
  * 
  * @author inifr
- * @author ander
+ * @author Ander
  * @author Aitziber
  */
 public interface Signable {
