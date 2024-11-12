@@ -10,6 +10,7 @@ import exceptions.InactiveUserException;
 import exceptions.ServerException;
 import exceptions.UserCapException;
 import exceptions.UserCredentialException;
+import org.omg.CORBA.UserException;
 import userLogicTier.model.User;
 
 /**
@@ -40,8 +41,9 @@ public interface Signable {
      * @return the registered user object
      * @throws ExistingUserException if the user already exists
      * @throws ServerException if a server-related error occurs during registration
+     * @throws exceptions.UserCapException
      */
-    public User signUp(User user) throws ExistingUserException, ServerException;
+    public User signUp(User user) throws ExistingUserException, ServerException, UserCapException;
 
     /**
      * Authenticates an existing user.

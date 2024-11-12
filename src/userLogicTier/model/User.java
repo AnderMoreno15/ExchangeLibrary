@@ -8,42 +8,57 @@ package userLogicTier.model;
 import java.io.Serializable;
 
 /**
- * Represents a user with properties such as name, email, password, address, city, ZIP code, and active status.
- * This class is used for both registration and authentication purposes, and it implements Serializable for data transfer.
- * 
+ * Represents a user with properties such as name, email, password, address, city, ZIP code, and active status. This class is used for both registration and authentication purposes, and it implements Serializable for data transfer.
+ *
  * Constructors allow different initialization for testing, sign-up, and sign-in scenarios.
- * 
+ *
  * @see Serializable
- * 
- * Usage Example:
- * User newUser = new User("John Doe", "johndoe@example.com", "password123", "123 Main St", "New York", "10001", true);
- * 
+ *
+ * Usage Example: User newUser = new User("John Doe", "johndoe@example.com", "password123", "123 Main St", "New York", "10001", true);
+ *
  * @author inifr
  * @author Ander
  */
 public class User implements Serializable {
+
     private static final long serialVersionUID = 1L;
-    
-    /** The user's name */
+
+    /**
+     * The user's name
+     */
     private String name;
-    
-    /** The user's email */
+
+    /**
+     * The user's email
+     */
     private String email;
-    
-    /** The user's password */
+
+    /**
+     * The user's password
+     */
     private String password;
-    
-    /** The user's street address */
+
+    /**
+     * The user's street address
+     */
     private String street;
-    
-    /** The user's city */
+
+    /**
+     * The user's city
+     */
     private String city;
-    
-    /** The user's ZIP code */
+
+    /**
+     * The user's ZIP code
+     */
     private String zip;
-    
-    /** The user's active status (true if active, false if inactive) */
+
+    /**
+     * The user's active status (true if active, false if inactive)
+     */
     private boolean active;
+
+    private int mobile = 666666666;
 
     /**
      * Default constructor for testing purposes, initializes fields with default values.
@@ -90,9 +105,9 @@ public class User implements Serializable {
         this.password = passwordInput;
     }
 
-     /**
+    /**
      * Gets the user's name.
-     * 
+     *
      * @return the user's name
      */
     public String getName() {
@@ -101,7 +116,7 @@ public class User implements Serializable {
 
     /**
      * Sets the user's name.
-     * 
+     *
      * @param name the name to set
      */
     public void setName(String name) {
@@ -110,7 +125,7 @@ public class User implements Serializable {
 
     /**
      * Gets the user's email.
-     * 
+     *
      * @return the user's email
      */
     public String getEmail() {
@@ -119,7 +134,7 @@ public class User implements Serializable {
 
     /**
      * Sets the user's email.
-     * 
+     *
      * @param email the email to set
      */
     public void setEmail(String email) {
@@ -128,7 +143,7 @@ public class User implements Serializable {
 
     /**
      * Gets the user's password.
-     * 
+     *
      * @return the user's password
      */
     public String getPassword() {
@@ -137,7 +152,7 @@ public class User implements Serializable {
 
     /**
      * Sets the user's password.
-     * 
+     *
      * @param password the password to set
      */
     public void setPassword(String password) {
@@ -146,7 +161,7 @@ public class User implements Serializable {
 
     /**
      * Gets the user's street address.
-     * 
+     *
      * @return the user's street address
      */
     public String getStreet() {
@@ -155,7 +170,7 @@ public class User implements Serializable {
 
     /**
      * Sets the user's street address.
-     * 
+     *
      * @param street the street address to set
      */
     public void setStreet(String street) {
@@ -164,7 +179,7 @@ public class User implements Serializable {
 
     /**
      * Gets the user's city.
-     * 
+     *
      * @return the user's city
      */
     public String getCity() {
@@ -173,7 +188,7 @@ public class User implements Serializable {
 
     /**
      * Sets the user's city.
-     * 
+     *
      * @param city the city to set
      */
     public void setCity(String city) {
@@ -182,7 +197,7 @@ public class User implements Serializable {
 
     /**
      * Gets the user's ZIP code.
-     * 
+     *
      * @return the user's ZIP code
      */
     public String getZip() {
@@ -191,7 +206,7 @@ public class User implements Serializable {
 
     /**
      * Sets the user's ZIP code.
-     * 
+     *
      * @param zip the ZIP code to set
      */
     public void setZip(String zip) {
@@ -200,7 +215,7 @@ public class User implements Serializable {
 
     /**
      * Gets the user's active status.
-     * 
+     *
      * @return true if the user is active, false otherwise
      */
     public boolean isActive() {
@@ -209,10 +224,19 @@ public class User implements Serializable {
 
     /**
      * Sets the user's active status.
-     * 
+     *
      * @param active true to set the user as active, false otherwise
      */
     public void setActive(boolean active) {
         this.active = active;
     }
+
+    public int getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(int mobile) {
+        this.mobile = mobile;
+    }
+
 }
